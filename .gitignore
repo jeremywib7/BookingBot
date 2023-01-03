@@ -1,0 +1,3 @@
+# Project exclude paths
+/src/main/java/com/ww3/booking/bookingbot/Bot.java
+/target/
