@@ -6,7 +6,6 @@ import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
-import java.rmi.UnknownHostException;
 
 @SpringBootApplication
 public class BookingBotApplication {
@@ -21,6 +20,8 @@ public class BookingBotApplication {
         } catch (TelegramApiException e) {
             throw new RuntimeException(e);
         }
+
+        MongoDB.connectToDatabase();
 
     }
 
